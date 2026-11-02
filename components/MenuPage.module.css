@@ -1,0 +1,75 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+  padding: 1.5rem 1rem 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  border: 2px dashed var(--red-pale);
+  border-radius: 6px;
+  padding: 2rem 1.5rem 2rem;
+}
+
+.header { text-align: center; }
+
+.title {
+  font-family: var(--font-hand);
+  font-size: clamp(1.8rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--red);
+  transform: rotate(-1.5deg);
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.gridItem {
+  aspect-ratio: 1;
+  background: #ffced2;
+  border: 2px solid var(--red);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: background 0.2s ease;
+}
+.gridItem:hover { background: #fff5f5; }
+
+.gridIcon { font-size: 2.4rem; }
+
+.gridLabel {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.3;
+}
