@@ -509,6 +509,7 @@ export default function GiftClient({ data }: Props) {
               <button onClick={() => scrollTo('moments')} title="Moments">📸</button>
               <button onClick={() => scrollTo('letter')} title="Message">💌</button>
               <button onClick={() => scrollTo('song')} title="Our Song">🎵</button>
+              <button onClick={() => scrollTo('video')} title="Our Video" aria-label="Our Video">🎬</button>
             </>
           )}
         </nav>
@@ -932,6 +933,28 @@ export default function GiftClient({ data }: Props) {
                   onLoadedMetadata={handleSongLoadedMetadata}
                   onEnded={() => setIsSongPlaying(false)}
                 />
+              </div>
+            </section>
+
+            <div className="section-divider">✦ • 🎬 • ✦</div>
+
+            {/* ── 7. SECTION: A VIDEO FOR YOU ── */}
+            <section id="video" className="gift-section">
+              <div className="content-wrapper">
+                <h2 className="gift-title">One Last <span>Surprise</span> 🎬</h2>
+                <p className="description">A little video made just for you 💙</p>
+                <div className="video-card">
+                  <video
+                    className="gift-video"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    aria-label="A special video for you"
+                  >
+                    <source src="/videos/video.mp4" type="video/mp4" />
+                    Your browser does not support HTML video.
+                  </video>
+                </div>
               </div>
             </section>
 

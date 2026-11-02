@@ -1,5 +1,5 @@
 import giftData from '@/lib/giftData'
-import GiftClient from '@/components/GiftClient'
+import HomeExperience from '@/components/HomeExperience'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const data = giftData.yahya || giftData.aya
-  return <GiftClient data={data} />
+  return <HomeExperience data={data} />
 }
